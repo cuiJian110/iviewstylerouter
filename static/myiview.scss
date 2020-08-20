@@ -1,0 +1,221 @@
+@import "./color.scss";
+.ivu-form-item-error-tip{
+    right: 0;
+    left: auto;
+    top: -27px;
+  }
+.ivu-form-item {
+  margin-bottom: 5px;
+}
+.ivu-radio-wrapper{
+  font-size: 16px;
+}
+.ivu-radio-group{
+  margin-top: 6px;
+}
+.ivu-dropdown-menu{
+  height: 300px;
+  overflow: scroll;
+  width: 245px;
+}
+.ivu-dropdown-item{
+  text-align: center;
+}
+
+.ivu-carousel-dots li button.radius{
+  width: 8px;
+  height: 8px;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+}
+.ivu-carousel-dots li.ivu-carousel-active>button.radius{
+    width: 20px;
+    height: 8px;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
+.ivu-carousel-dots-inside{
+  bottom: 20px;
+}
+
+.ivu-modal-body {
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.ivu-rate-star-full:before, .ivu-rate-star-half .ivu-rate-star-content:before{
+  color: $colorMain;
+}
+.ivu-rate-star-full:hover:before, .ivu-rate-star-half:hover .ivu-rate-star-content:before {
+  color: $colorMain;
+}
+.ivu-btn-primary {
+  color: #fff;
+  background-color: $colorMain;
+  border-color: $colorMain;
+}
+.ivu-btn-primary:hover {
+  color: #fff;
+  background-color: $colorMain;
+  border-color: $colorMain;
+}
+.ivu-btn-default  {
+    color: #fff;
+    background-color: $colorMain;
+    border-color: $colorMain;
+  }
+  .ivu-btn-default:hover {
+    color: #fff;
+    background-color: $colorMain;
+    border-color: $colorMain;
+  }
+  .ivu-date-picker-cells-cell-selected em, .ivu-date-picker-cells-cell-selected:hover em {
+    background: $colorMain;
+    color: #fff;
+}
+.ivu-date-picker-cells-focused em {
+    box-shadow: 0 0 0 1px $colorMain inset;
+}
+
+
+.ivu-date-picker-cells-cell-today em:after {
+    background: $colorMain;
+}
+.ivu-btn-text:hover {
+  color: $colorMain;
+  background-color: #fff;
+  border-color: transparent;
+}
+.ivu-page .ivu-page-item-active {
+  border-color: $colorMain;
+}
+.ivu-page .ivu-page-item-active a {
+  color: $colorMain;
+}
+.ivu-page .ivu-page-item:hover {
+  border-color: $colorMain;
+}
+.ivu-page .ivu-page-item:hover a {
+  color: $colorMain;
+}
+.ivu-page .ivu-page-prev:hover a {
+  color: $colorMain;
+}
+.ivu-page .ivu-page-next:hover a {
+  color: $colorMain;
+}
+.ivu-page-item-jump-next a, .ivu-page-item-jump-prev a {
+  color: $colorMain;
+}
+.ivu-input {
+  /* height: .36rem;
+  line-height: .36rem;
+  border-radius: .04rem;
+  font-size: .16rem; */
+  outline-color: $colorMain;
+}
+
+.ivu-input:hover {
+  border-color: $colorMain;
+}
+
+.ivu-input:focus {
+  border-color: $colorMain;
+
+}
+.ivu-input-with-search:hover .ivu-input {
+  border-color: $colorMain;
+}
+.ivu-input-search {
+  background: $colorMain!important;
+  border-color: $colorMain!important;
+}
+.ivu-input-search:hover {
+  background: $colorMain!important;
+  border-color: $colorMain!important;
+}
+.ivu-select-single .ivu-select-selection {
+  /* height: .36rem; */
+  /* position: relative; */
+}
+
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+.ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+  /* height: .36rem;
+  line-height: .36rem;
+  font-size: .14rem;
+  border-radius: .04rem; */
+}
+
+.ivu-form .ivu-form-item-label {
+  /* font-size: 0.16rem; */
+}
+
+.ivu-select-multiple .ivu-tag {
+  /* height: .3rem;
+  line-height: .3rem; */
+
+}
+
+
+.ivu-select-multiple .ivu-tag i {
+  /* top: .07rem; */
+}
+
+.ivu-select-multiple .ivu-select-selection .ivu-select-placeholder {
+  /* height: 36px;
+  line-height: 36px;
+  font-size: .16rem; */
+
+}
+
+textarea.ivu-input {
+  resize: none;
+  /* height: 2rem;
+  line-height: .24rem;
+  font-size: .16rem; */
+
+}
+
+.ivu-select-visible .ivu-select-selection {
+  border-color: $colorMain;
+  box-shadow: none;
+}
+
+.ivu-select-item-selected,
+.ivu-select-item-selected:hover {
+  color: $colorMain;
+
+}
+
+.ivu-select-selection-focused {
+
+  border-color: $colorMain;
+}
+
+.ivu-select-single .ivu-select-selection:hover {
+  border-color: $colorMain;
+}
+.ivu-checkbox-checked .ivu-checkbox-inner {
+  border-color: $colorMain;
+  background-color: $colorMain;
+}
+
+.ivu-checkbox-input{
+  outline: $colorMain;
+}
+.ivu-checkbox-input:hover{
+  outline: $colorMain;
+  border-color: $colorMain;
+
+}
+.ivu-upload-drag:hover {
+  border: 1px dashed $colorMain;
+}
+.ivu-radio-checked .ivu-radio-inner {
+  border-color: $colorMain;
+}
+.ivu-radio-inner:after {
+  background-color: $colorMain;
+}
