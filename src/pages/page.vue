@@ -1,56 +1,22 @@
 <template>
     <div>
-        <div class="myHeader">
-            myHeader 
-        </div>
+        <myHeader></myHeader>
         <div class="myContent">
             <router-view></router-view>
         </div>
     </div>
 </template>
 <script>
-// import {routers} from "@/router";
-const modulesFiles = require.context("@/pages", true, /\.vue$/);
-const modules = modulesFiles.keys().reduce((modules, modulePath) => {
-    const moduleName = modulePath.replace(/^\.\/(.*)\.\w+$/, "$1");
-    const value = modulesFiles(modulePath);
-    modules[moduleName] = value.default;
-    return modules;
-}, {});
+import myHeader from "@/commonComponents/myHeader";
 export default {
+    components: {
+        myHeader,
+    },
     data() {
         return {
         }
     },
     created() {
-        // let routers = [
-        //     { path: "/", redirect: "/login" },
-        //     { path: "/login", name: "login", component: () => import("@/pages/login")},
-        //     { path: "/page", name: "page", component: () => import("@/pages/page"), children: [
-        //         // 有三种情况 1、没有左侧菜单 2、有左侧菜单 3、固定死的（个人中心。。。。。。）前两种动态生成，最后一种写死
-        //     ]},
-        // ]
-        console.log(this.$router.options.routes)
-        let routeList = [
-            {path: "/page/page1", name: "page1"},
-            {path: "/page/page2", name: "page2"}
-        ]
-        localStorage.setItem("routerList",JSON.stringify(routeList))
-        routeList.forEach(item => {
-            this.$router.options.routes.forEach(i => {
-                // console.log(i)
-                if(i.name === "page") {
-                    i.children.push({
-                        path: item.path, 
-                        name: item.name,
-                        component: modules[item.name]
-                    })
-                }
-            })
-            
-        })
-        this.$router.addRoutes(this.$router.options.routes)
-        console.log(this.$router.options.routes)
     },
     mounted() {
     },
@@ -61,8 +27,4 @@ export default {
 }
 </script>
 <style scoped>
-.myHeader {
-    height: 50px;
-    line-height: 50px;
-}
 </style>
