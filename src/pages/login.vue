@@ -1,7 +1,6 @@
 <template>
     <div>
         login page
-
         <Button @click="handleLogin">login</Button>
     </div>
 </template>

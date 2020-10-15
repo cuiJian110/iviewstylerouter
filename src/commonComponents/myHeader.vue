@@ -16,10 +16,10 @@ export default {
     data() {
         return {
             headerRouterList: [
-                {moduleId: "17",moduleName: "hr仪表盘",modulePath: "/panel"},
-                {moduleId: "17",moduleName: "组织发展云",modulePath: "/organization"},
-                {moduleId: "17",moduleName: "牛人猎聘云",modulePath: "/cooperated"},
-                {moduleId: "17",moduleName: "hr工具云",modulePath: "/tool"}
+                {moduleId: "1",moduleName: "hr仪表盘",modulePath: "/panel"},
+                {moduleId: "2",moduleName: "组织发展云",modulePath: "/organization"},
+                {moduleId: "3",moduleName: "牛人猎聘云",modulePath: "/cooperated"},
+                {moduleId: "4",moduleName: "hr工具云",modulePath: "/tool"}
             ],
             hrpanel: [
                 {menuType: "C", menuName: "查看", routeName: "",nullroutePath: "/panel/info"}
@@ -49,7 +49,11 @@ export default {
         console.log(this.$router.options.routes)
         let routeList = [
             {path: "/page/page1", name: "page1"},
-            {path: "/page/page2", name: "page2"}
+            {path: "/page/page2", name: "page2"},
+            {path: "/page/page3", name: "page3"},
+            {path: "/page/page4", name: "page4"},
+            {path: "/page/page5", name: "page5"},
+            {path: "/page/page15", name: "page15"}
         ]
         localStorage.setItem("routerList",JSON.stringify(routeList))
         routeList.forEach(item => {

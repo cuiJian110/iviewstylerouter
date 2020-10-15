@@ -5,6 +5,7 @@ Vue.use(Router)
 export let routers = [
   { path: "/", redirect: "/login" },
   { path: "/login", name: "login", component: () => import("@/pages/login")},
+  { path: "/testRender", name: "testRender", component: () => import("@/pages/testRender")},
   { path: "/page",name: "page", component: () => import("@/pages/page"), children: [
     // 有三种情况 1、没有左侧菜单 2、有左侧菜单 3、固定死的（个人中心。。。。。。）前两种动态生成，最后一种写死
   ]},
