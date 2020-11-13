@@ -19,6 +19,8 @@ import Vue2OrgTree from 'vue2-org-tree'
 Vue.use(Vue2OrgTree)
 import OrgTree from 'v-org-tree'
 import 'v-org-tree/dist/v-org-tree.css'
+import mixin from "@/mixins";
+Vue.mixin(mixin)
 Vue.use(OrgTree)
 /* eslint-disable no-new */
 new Vue({
